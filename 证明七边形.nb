@@ -1,0 +1,329 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     10693,        319]
+NotebookOptionsPosition[      9547,        290]
+NotebookOutlinePosition[      9946,        306]
+CellTagsIndexPosition[      9903,        303]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"pts3", "=", 
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"Cos", "[", 
+       RowBox[{"2", "n", " ", 
+        RowBox[{"\[Pi]", "/", "7"}]}], "]"}], ",", 
+      RowBox[{"Sin", "[", 
+       RowBox[{"2", " ", "n", " ", 
+        RowBox[{"\[Pi]", "/", "7"}]}], "]"}]}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"n", ",", "0", ",", "6"}], "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{3.8370547952476053`*^9},
+ CellLabel->"In[2]:=",ExpressionUUID->"40625844-355a-42ce-ae9d-2055f271693d"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"1", ",", "0"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"Sin", "[", 
+      FractionBox[
+       RowBox[{"3", " ", "\[Pi]"}], "14"], "]"}], ",", 
+     RowBox[{"Cos", "[", 
+      FractionBox[
+       RowBox[{"3", " ", "\[Pi]"}], "14"], "]"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"-", 
+      RowBox[{"Sin", "[", 
+       FractionBox["\[Pi]", "14"], "]"}]}], ",", 
+     RowBox[{"Cos", "[", 
+      FractionBox["\[Pi]", "14"], "]"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"-", 
+      RowBox[{"Cos", "[", 
+       FractionBox["\[Pi]", "7"], "]"}]}], ",", 
+     RowBox[{"Sin", "[", 
+      FractionBox["\[Pi]", "7"], "]"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"-", 
+      RowBox[{"Cos", "[", 
+       FractionBox["\[Pi]", "7"], "]"}]}], ",", 
+     RowBox[{"-", 
+      RowBox[{"Sin", "[", 
+       FractionBox["\[Pi]", "7"], "]"}]}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"-", 
+      RowBox[{"Sin", "[", 
+       FractionBox["\[Pi]", "14"], "]"}]}], ",", 
+     RowBox[{"-", 
+      RowBox[{"Cos", "[", 
+       FractionBox["\[Pi]", "14"], "]"}]}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"Sin", "[", 
+      FractionBox[
+       RowBox[{"3", " ", "\[Pi]"}], "14"], "]"}], ",", 
+     RowBox[{"-", 
+      RowBox[{"Cos", "[", 
+       FractionBox[
+        RowBox[{"3", " ", "\[Pi]"}], "14"], "]"}]}]}], "}"}]}], 
+  "}"}]], "Output",
+ CellChangeTimes->{3.837054748705775*^9, 3.837054796542756*^9},
+ CellLabel->"Out[2]=",ExpressionUUID->"dee3ce37-1024-4c2d-9a06-40af8d1e762b"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Graphics", "[", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"Opacity", "[", "0.7", "]"}], ",", "Red", ",", 
+    RowBox[{"Line", "[", 
+     RowBox[{"pts3", "[", 
+      RowBox[{"[", 
+       RowBox[{"Last", "[", 
+        RowBox[{"FindShortestTour", "[", "pts3", "]"}], "]"}], "]"}], "]"}], 
+     "]"}], ",", "Blue", ",", 
+    RowBox[{"PointSize", "[", "0.05", "]"}], ",", 
+    RowBox[{"Point", "[", "pts3", "]"}]}], "}"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8370557957975063`*^9, 3.8370558229456434`*^9}},
+ CellLabel->"In[30]:=",ExpressionUUID->"d7d48f02-df68-43d3-996f-7951589fe8d3"],
+
+Cell[BoxData[
+ GraphicsBox[
+  {RGBColor[1, 0, 0], Opacity[0.7], 
+   LineBox[NCache[{{1, 0}, {
+      Sin[Rational[3, 14] Pi], -Cos[Rational[3, 14] Pi]}, {-
+       Sin[Rational[1, 14] Pi], -Cos[Rational[1, 14] Pi]}, {-
+       Cos[Rational[1, 7] Pi], -Sin[Rational[1, 7] Pi]}, {-
+       Cos[Rational[1, 7] Pi], Sin[Rational[1, 7] Pi]}, {-
+       Sin[Rational[1, 14] Pi], Cos[Rational[1, 14] Pi]}, {
+      Sin[Rational[3, 14] Pi], Cos[Rational[3, 14] Pi]}, {1, 0}}, {{1, 0}, {
+      0.6234898018587335, -0.7818314824680298}, {-0.2225209339563144, \
+-0.9749279121818236}, {-0.9009688679024191, -0.4338837391175581}, \
+{-0.9009688679024191, 0.4338837391175581}, {-0.2225209339563144, 
+      0.9749279121818236}, {0.6234898018587335, 0.7818314824680298}, {1, 
+      0}}]], 
+   {RGBColor[0, 0, 1], PointSize[0.05], 
+    PointBox[NCache[{{1, 0}, {
+       Sin[Rational[3, 14] Pi], Cos[Rational[3, 14] Pi]}, {-
+        Sin[Rational[1, 14] Pi], Cos[Rational[1, 14] Pi]}, {-
+        Cos[Rational[1, 7] Pi], Sin[Rational[1, 7] Pi]}, {-
+        Cos[Rational[1, 7] Pi], -Sin[Rational[1, 7] Pi]}, {-
+        Sin[Rational[1, 14] Pi], -Cos[Rational[1, 14] Pi]}, {
+       Sin[Rational[3, 14] Pi], -Cos[Rational[3, 14] Pi]}}, {{1, 0}, {
+       0.6234898018587335, 0.7818314824680298}, {-0.2225209339563144, 
+       0.9749279121818236}, {-0.9009688679024191, 
+       0.4338837391175581}, {-0.9009688679024191, -0.4338837391175581}, \
+{-0.2225209339563144, -0.9749279121818236}, {
+       0.6234898018587335, -0.7818314824680298}}]]}}]], "Output",
+ CellChangeTimes->{
+  3.8370548070336123`*^9, {3.837055808874777*^9, 3.8370558237911396`*^9}},
+ CellLabel->"Out[30]=",ExpressionUUID->"b976724f-e4fa-4b6c-afe6-d186afda186a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"a", "=", 
+   RowBox[{"EuclideanDistance", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"1", ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Sin", "[", 
+        FractionBox[
+         RowBox[{"3", " ", "\[Pi]"}], "14"], "]"}], ",", 
+       RowBox[{"-", 
+        RowBox[{"Cos", "[", 
+         FractionBox[
+          RowBox[{"3", " ", "\[Pi]"}], "14"], "]"}]}]}], "}"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"b", "=", 
+   RowBox[{"EuclideanDistance", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Sin", "[", 
+        FractionBox[
+         RowBox[{"3", " ", "\[Pi]"}], "14"], "]"}], ",", 
+       RowBox[{"-", 
+        RowBox[{"Cos", "[", 
+         FractionBox[
+          RowBox[{"3", " ", "\[Pi]"}], "14"], "]"}]}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Sin", "[", 
+        FractionBox[
+         RowBox[{"3", " ", "\[Pi]"}], "14"], "]"}], ",", 
+       RowBox[{"Cos", "[", 
+        FractionBox[
+         RowBox[{"3", " ", "\[Pi]"}], "14"], "]"}]}], "}"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"c", "=", 
+   RowBox[{"EuclideanDistance", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Sin", "[", 
+        FractionBox[
+         RowBox[{"3", " ", "\[Pi]"}], "14"], "]"}], ",", 
+       RowBox[{"-", 
+        RowBox[{"Cos", "[", 
+         FractionBox[
+          RowBox[{"3", " ", "\[Pi]"}], "14"], "]"}]}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"-", 
+        RowBox[{"Sin", "[", 
+         FractionBox["\[Pi]", "14"], "]"}]}], ",", 
+       RowBox[{"Cos", "[", 
+        FractionBox["\[Pi]", "14"], "]"}]}], "}"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Simplify", "[", 
+  RowBox[{
+   FractionBox[
+    SuperscriptBox["b", "2"], 
+    SuperscriptBox["a", "2"]], "+", 
+   FractionBox[
+    SuperscriptBox["c", "2"], 
+    SuperscriptBox["b", "2"]], "+", 
+   FractionBox[
+    SuperscriptBox["a", "2"], 
+    SuperscriptBox["c", "2"]]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.837055230146823*^9, 3.837055285468566*^9}, {
+   3.8370553155799212`*^9, 3.8370554328781166`*^9}, {3.837055532964243*^9, 
+   3.837055535855672*^9}, {3.8370555786818967`*^9, 3.837055584462416*^9}, 
+   3.8370556670694733`*^9, {3.837056060862771*^9, 3.8370560665674553`*^9}},
+ CellLabel->"In[40]:=",ExpressionUUID->"d57dd2f8-3fc4-45fc-a4c5-bb8de89c9331"],
+
+Cell[BoxData[
+ RowBox[{
+  FractionBox["5", "8"], " ", 
+  SuperscriptBox[
+   RowBox[{"Sec", "[", 
+    FractionBox["\[Pi]", "14"], "]"}], "2"], " ", 
+  SuperscriptBox[
+   RowBox[{"Sec", "[", 
+    FractionBox[
+     RowBox[{"3", " ", "\[Pi]"}], "14"], "]"}], "2"], " ", 
+  RowBox[{"(", 
+   RowBox[{"2", "+", 
+    RowBox[{"2", " ", 
+     RowBox[{"Cos", "[", 
+      FractionBox["\[Pi]", "7"], "]"}]}], "+", 
+    RowBox[{"Sin", "[", 
+     FractionBox["\[Pi]", "14"], "]"}], "+", 
+    RowBox[{"Sin", "[", 
+     FractionBox[
+      RowBox[{"3", " ", "\[Pi]"}], "14"], "]"}]}], ")"}]}]], "Output",
+ CellChangeTimes->{{3.837056067523973*^9, 3.8370560698858314`*^9}},
+ CellLabel->"Out[43]=",ExpressionUUID->"53c910c0-e6db-4b6f-859a-10f2bc3e4f5d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"N", "[", 
+  FractionBox[
+   RowBox[{"5", " ", 
+    SuperscriptBox[
+     RowBox[{"Sec", "[", 
+      FractionBox[
+       RowBox[{"3", " ", "\[Pi]"}], "14"], "]"}], "2"], " ", 
+    RowBox[{"(", 
+     RowBox[{"2", "+", 
+      RowBox[{"2", " ", 
+       RowBox[{"Cos", "[", 
+        FractionBox["\[Pi]", "7"], "]"}]}], "+", 
+      RowBox[{"Sin", "[", 
+       FractionBox["\[Pi]", "14"], "]"}], "+", 
+      RowBox[{"Sin", "[", 
+       FractionBox[
+        RowBox[{"3", " ", "\[Pi]"}], "14"], "]"}]}], ")"}]}], 
+   RowBox[{"4", " ", 
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"Cos", "[", 
+        FractionBox[
+         RowBox[{"5", " ", "\[Pi]"}], "28"], "]"}], "+", 
+       RowBox[{"Sin", "[", 
+        FractionBox[
+         RowBox[{"5", " ", "\[Pi]"}], "28"], "]"}]}], ")"}], "2"]}]], 
+  "]"}]], "Input",
+ NumberMarks->False,
+ CellLabel->"In[44]:=",ExpressionUUID->"8cebd444-7396-423b-b2b0-ceb2f4990db3"],
+
+Cell[BoxData["4.999999999999998`"], "Output",
+ CellChangeTimes->{3.837055700345583*^9, 3.83705582926243*^9, 
+  3.8370560720340447`*^9},
+ CellLabel->"Out[44]=",ExpressionUUID->"7de81197-c414-4f6c-96b5-f7294f2b7f67"]
+}, Open  ]]
+},
+WindowSize->{1920, 997},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+FrontEndVersion->"12.1 for Microsoft Windows (64-bit) (June 19, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"5cbc97e5-7f9f-41c0-8f54-ad53d7258a64"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 547, 15, 28, "Input",ExpressionUUID->"40625844-355a-42ce-ae9d-2055f271693d"],
+Cell[1130, 39, 1637, 54, 97, "Output",ExpressionUUID->"dee3ce37-1024-4c2d-9a06-40af8d1e762b"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2804, 98, 606, 14, 28, "Input",ExpressionUUID->"d7d48f02-df68-43d3-996f-7951589fe8d3"],
+Cell[3413, 114, 1697, 30, 386, "Output",ExpressionUUID->"b976724f-e4fa-4b6c-afe6-d186afda186a"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5147, 149, 2445, 75, 158, "Input",ExpressionUUID->"d57dd2f8-3fc4-45fc-a4c5-bb8de89c9331"],
+Cell[7595, 226, 733, 21, 49, "Output",ExpressionUUID->"53c910c0-e6db-4b6f-859a-10f2bc3e4f5d"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8365, 252, 949, 30, 64, "Input",ExpressionUUID->"8cebd444-7396-423b-b2b0-ceb2f4990db3"],
+Cell[9317, 284, 214, 3, 32, "Output",ExpressionUUID->"7de81197-c414-4f6c-96b5-f7294f2b7f67"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
